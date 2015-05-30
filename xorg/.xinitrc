@@ -5,4 +5,4 @@ xset -b
 compton &
 sh ~/.fehbg &
 
-exec ~/.startdwm
+exec i3
