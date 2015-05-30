@@ -2,12 +2,14 @@
 URxvt*.depth: 32
 URxvt*.scrollBar: false
 
-URxvt*.font: -xos4-terminus-medium-r-normal--18-180-72-72-c-100-iso8859-1
+!!URxvt*.font: -xos4-terminus-medium-r-normal--18-180-72-72-c-100-iso8859-1
 !!URxvt*.font: -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso8859-1
 !!URxvt*.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso8859-1
 !!URxvt*.font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso8859-1
 !!URxvt*.font: -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-1
-!!URxvt*.font: -windows-proggyclean-medium-r-normal--13-80-96-96-c-70-iso8859-1
+URxvt*.font: -windows-proggyclean-medium-r-normal--13-80-96-96-c-70-iso8859-1
+!!URxvt*.font: -windows-proggysquare-medium-r-normal--11-80-96-96-c-70-iso8859-1
+!!URxvt*.font: -windows-pixelcarnage monospace-medium-r-normal--14-90-96-96-c-90-iso8859-1
 
 !! Disable hinting?
 !Xft.antialias: false
