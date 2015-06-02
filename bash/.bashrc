@@ -27,9 +27,17 @@ alias sched="cd ~/git/fogi/gs_apps/uhf_scheduler"
 alias planner="cd ~/git/fogi/noc_apps/communication_planner"
 
 # Commonly used git phrases
+alias status="clear; git status"
 alias log="clear; git log --pretty=oneline -35"
 alias uberlog="clear; git log --decorate --pretty=oneline --all --graph --abbrev-commit"
-alias status="clear; git status"
+
+# Run watch command on git log -- sed changes ^[m to ^[0m to work around watch bug
+alias watchtree="watch -c -n 1 'git log --oneline --color --graph --decorate --all|sed \"s/\[\x6d/\[\x30\x6d/g\"'"
+alias watchstatus="watch -c -n 1 'git -c color.status=always status |sed \"s/\[\x6d/\[\x30\x6d/g\"'"
+alias watchlog="watch -c -n 1 'git log --color --pretty=oneline -35| sed \"s/\x1b\[\x6d/\x1b\[\x30\x6d/g\"'"
+
+# Run watch command on a directory
+alias watchls="watch -c -n 1 ls --color -1"
 
 # Commonly used build phrases
 alias build="clear; make clean; make all P=1 -j9"
