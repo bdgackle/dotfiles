@@ -1,0 +1,16 @@
+4/13/2015
+Installed Xilinx "vivado" SDK on work desktop.
+
+Do get their installer to work, I had to:
+
+1) export _JAVA_AWT_WM_NONREPARENTING=1
+2) install wmname
+3) wmname LG3D
+
+Then it worked.
+
+There is a log in /root/.Xilinix/xinstall/xinstall_1428981208402.log... hopefully that can be used to unwind changes if this craps all over my hard drive.
+
+
+4/14/2015
+To actually use xilinx tools, we need to source /opt/Xilinx/SDK/2014.4/settings64.sh

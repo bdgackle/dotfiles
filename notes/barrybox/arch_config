@@ -1,0 +1,8 @@
+5 May 2015:
+Ran into stability issues after recent upgrade.  Seems to be related to microcode for Haswell processors.  Manifested as segfault on vim exit.
+
+Per suggestion on arch forum for same symptom, attempting to upgrade microcode by:
+
+1) Installing package intel-ucode
+2) Adding this line to /boot/loader/entries/arch.conf (am using gummiboot on this system), right BEFORE (it has to be first) the existing ramdisk line.
+initrd /intel-ucode.img
