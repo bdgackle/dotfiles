@@ -1,4 +1,4 @@
-"/usr/bin/trackpad-toggle.sh"
+"~/scripts/trackpad-toggle.sh"
     m:0x4 + c:72
 "xvkbd -xsendevent -no-jump-pointer -text a"
     m:0x0 + b:9
