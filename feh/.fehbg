@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-xinerama --image-bg black --bg-center '/home/bdgackle/media/wallpaper/beneath13x1080p.jpg' 
+feh  --bg-fill '/home/bdgackle/media/wallpaper/beneath11440p.png' 
