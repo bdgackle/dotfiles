@@ -1,0 +1,17 @@
+rfkill unblock bluetooth
+sudo systemctl start bluetooth
+bluetoothctl
+power on
+agent on
+default-agent
+pairable on
+discoverable on
+scan on
+<turn on controller>
+pair <id>
+trust <id>
+connect <id>
+
+exit bluetoothctl
+
+sudo systemctl start ds4drv
