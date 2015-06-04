@@ -1,0 +1,6 @@
+xrandr --newmode fhd 173.00 1920 2048 2248 2576  1080 1083 1088 1120
+xrandr --admode eDP1 fhd
+xrandr --output eDP1 --mode fhd
+
+
+can use cvt to get other resolution
