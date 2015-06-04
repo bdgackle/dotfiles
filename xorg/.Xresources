@@ -2,55 +2,54 @@
 URxvt*.depth: 32
 URxvt*.scrollBar: false
 
-!!URxvt*.font: -xos4-terminus-medium-r-normal--18-180-72-72-c-100-iso8859-1
-!!URxvt*.font: -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso8859-1
-!!URxvt*.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso8859-1
-!!URxvt*.font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso8859-1
-!!URxvt*.font: -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-1
-URxvt*.font: -windows-proggyclean-medium-r-normal--13-80-96-96-c-70-iso8859-1
-!!URxvt*.font: -windows-proggysquare-medium-r-normal--11-80-96-96-c-70-iso8859-1
-!!URxvt*.font: -windows-pixelcarnage monospace-medium-r-normal--14-90-96-96-c-90-iso8859-1
+!! Font Configuration
+Xft*dpi: 277
+Xft.antialias: 1
+Xft.hinting: 1
+URxvt*.font: xft:Inconsolata:size=10
 
-!! Disable hinting?
-!Xft.antialias: false
-!Xft.hinting: false
+!! Experimental font configuration
+!Xft.autohint: 0
+!Xft.hintstyle: hintfull
+!Xft.rgba: none
+!Xft.lcdfilter: lcdnone
 
 !! Disable that stupid ctrl-shift combo in urxvt
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-!! Solarized 16-color scheme (I hope) 
+!! Solarized 16-color scheme (I hope)
 URxvt*background: [85]#002b36
 *foreground: #839496
- 
+
 !! black dark/light
 *color0: #073642
 *color8: #002b36
- 
+
 !! red dark/light
 *color1: #dc322f
 *color9: #cb4b16
- 
+
 !! green dark/light
 *color2: #859900
 *color10: #586e75
- 
+
 !! yellow dark/light
 *color3: #b58900
 *color11: #657b83
- 
+
 !! blue dark/light
 *color4: #268bd2
 *color12: #839496
- 
+
 !! magenta dark/light
 *color5: #d33682
 *color13: #6c71c4
- 
+
 !! cyan dark/light
 *color6: #2aa198
 *color14: #93a1a1
- 
+
 !! white dark/light
 *color7: #eee8d5
 *color15: #fdf6e3
