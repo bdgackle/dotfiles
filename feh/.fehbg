@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-xinerama --image-bg black --bg-center '/home/bdgackle/media/wallpaper/beneath13x1080p.jpg' 
