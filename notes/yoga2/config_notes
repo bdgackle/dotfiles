@@ -1,0 +1,121 @@
+1) Standard arch install
+	a) Used 2014-08 dual-iso
+	b) Ran 'dmesg -D' to squelch spam
+	c) INSTALL NETWORK CONNECTION
+		- 'rmmod ideapad_laptop'
+		- 'rfkill unblock wifi'
+		- 'wifi-menu wlp1s0'
+	d) PARTITIONING
+		- First partition: 500 MB, type EF00, format FAT32, mount to /boot
+		- Second partition: 238GB, type 8300, format EXT4, mount to /
+	d) BOOTSTRAP: run 'pacstrap -i /mnt base base-devel'
+	e) FSTAB: run 'genfstab -U -p /mnt >> /mnt/etc/fstab'
+	f) CHROOT: run 'arch-chroot /mnt /bin/bash'
+        g) LOCALE:
+		- uncomment 'en_US.UTF8 UTF8' in /etc/locale.gen
+		- run 'local-gen'
+		- run 'echo LANG=en_US.UTF8 > /etc/locale.conf'
+		- run 'export LANG=en_US.UTF8'
+	h) TIMEZONE:
+		- run 'ln -s /usr/share/zoneinfo/US/Pacific /etc/localtime'
+		- run 'hwclock --systohc --utc'
+
+2) Setup network
+	a) Echo the hostname to /etc/hostname, and add to 127... line in /etc/hosts
+	b) installed iw, wpa_supplicant, dialog
+	c) Fix connectivity with temporary fix for now
+3) Setup bootloader -- used gummiboot exactly as in wiki
+3) Fixed itty bitty font issue
+	b) Added 'FONT=ter-132n' to /etc/vconsole.conf 'FONT=ter-132n' to /etc/vconsole.conf
+	c) Added consolefont hook to /etc/mkinitcpio.conf, right after 'base'
+	d) Added i915 module to /etc/mkinitcpio.conf for early KMS (prevents overwrite)
+5) Create user account 'useradd -m -G users -s /bin/bash <name>'
+6) Setup sudo: run 'visudo', then uncomment lines toward bottom to allow all users with root pw
+
+PACKAGES INSTALLED (ORDER)
+terminus-font
+
+gummiboot
+
+dialog
+rfkill
+iw
+wpa_supplicant
+
+vim
+vim-colors-solarized-git (AUR)
+tmux
+git
+ctags
+
+openssh
+arp-scan
+iotop
+htop
+netcat
+
+xorg-server
+xorg-server-utils
+xf86-video-intel
+xf86-input-synaptics
+xorg-xinit
+xorg-xev
+tk
+
+abs
+dwm (ABS)
+dmenu
+cower (AUR)
+compton (AUR)
+ttf-inconsolata
+feh
+rxvt-unicode
+gvim
+firefox
+xbindkeys
+alsa-utils
+
+boost
+libev
+activemq-cpp (AUR)
+screen
+
+acpid
+
+CONFIG FILES PULLED IN:
+.tmux.conf
+.vimrc
+.bashrc
+.xinitrc
+.Xresources
+.xbindkeysrc
+/etc/X11/xorg.conf.d/50-synaptics.conf (for Lenovo)
+/etc/modules-load.d/alsa-base.conf (for Lenovo)
+/etc/modprobe.d/yoga2.conf (for Lenovo)
+dwm/config.h
+/usr/bin/trackpad-toggle.sh
+
+BROWSER CONFIGURATION
+Using AutoHiDPI to manage DPI issues in firefox (set to 3200/2x)
+Using "Blank Your Monitor" for colors (manual config solarized scheme)
+Using JSONView for json viewing (because Greg)
+.Xresources DPI setting is half the secret to getting firefox to work
+Using Deja Vu fonts @ 12pt for most of the firefox font settings; looks nice
+Current theme is "FT DeepDark 11.0.2"
+
+SYSTEMD CHANGES
+sudo systemctl enable sshd
+sudo systemctl acpid
+
+OTHER CHANGES
+alsamixer to unmute sound
+
+
+TEMPORARY FIXES:
+1) Blacklist ideapad_laptop (as of Kernel 3.15 -- possible not later)
+
+2) USB error messages from touchscreen device
+	a) Need to run 'dmesg -D' at every boot
+
+TODO:
+8) Automate network connections
