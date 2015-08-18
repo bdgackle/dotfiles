@@ -17,8 +17,11 @@ syntax enable
 colorscheme solarized
 
 " Build and see errors
-:set makeprg=make\ all
+:set makeprg=clear\;\ make\ all
 ":set errorformat=%f:%l:%c:\ fatal\ error:\ %m,%-G%.%#
+
+" Cscope results to quicklist
+:set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 " Taglist
 " filetype plugin on
