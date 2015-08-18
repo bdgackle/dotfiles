@@ -38,6 +38,8 @@ alias watchlog="watch -c -n 1 'git log --color --pretty=oneline -35| sed \"s/\x1
 
 # Run watch command on a directory
 alias watchls="watch -c -n 1 ls --color -1"
+alias watchll="watch -c -n 1 ls --color -l"
+alias watchlla="watch -c -n 1 ls --color -la"
 
 # Commonly used build phrases
 alias build="clear; make clean; make all P=1 -j9"
