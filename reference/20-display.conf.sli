@@ -1,0 +1,29 @@
+Section "ServerLayout"
+    Identifier     "Layout0"
+EndSection
+
+Section "Monitor"
+  Identifier "Monitor0"
+EndSection
+
+Section "Device"
+    Identifier     "Device0"
+    Driver         "nvidia"
+    VendorName     "NVIDIA Corporation"
+    BoardName      "GeForce GTX 780"
+    BusID          "PCI:1:0:0"
+    Screen          0
+EndSection
+
+Section "Screen"
+    Identifier     "Screen0"
+    Device         "Device0"
+    Monitor        "Monitor0"
+
+    Option         "metamodes" "DFP-4: 3840x2160_60"
+    Option         "ModeValidation" "NoMaxPclkCheck, NoDisplayPortBandwidthCheck"
+#    Option         "SLI" "on"
+#    Option         "SLI" "off"
+    Option         "SLI" "SFR"
+#    Option         "SLI" "AFR"
+EndSection
