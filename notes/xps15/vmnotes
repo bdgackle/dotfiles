@@ -1,0 +1,44 @@
+To enable GPU Passthrough:
+
+From blog post at
+https://bufferoverflow.io/gpu-passthrough/
+
+1) Enable IOMMU
+    - add kernel parameter: intel_iommu=on (GRUB_CMDLINE_DEFAULT)
+    - this is in /etc/default/grub
+    - sudo grub-mkconfig -o /boot/grub (or whatever)
+    - rebuild grub
+    - reboot
+
+2) Identify GPU
+    - from: lspci -nnk
+    - for my nvidia card: 01:00.0
+    - check for iommu_group in:
+        ls -lha /sys/bus/pci/devices/0000/\:01\:00.0/iommu_group/devices
+    - Should see entry for nvidia card address
+    - Should NOT see entry for intel card (00:02.0)
+        - If so need to get nvidia card in own IOMMU, this will require
+          going to a AUR kernel: linux-vfio
+        - The vfio kernel will cause complications with the nvidia package,
+          so will need to do with that; see blog post for more
+
+3) Block nvidia driver from grabbing GPU on host machine:
+    - edit /etc/mkinitcpio.conf, add line:
+        MODULES="pci-stub"
+        sudo mkinitcpio -p linux (or linux-vfio, depending)
+    - get module ID for card from lspci -nnk (for me, it is 10de:139b)
+    - add kernel parameter: pci-stub.ids=10de:17c8
+    - reboot
+    - lspci -nnk should now show: kernel driver in use: pci-stub
+
+4) Need to copy the OVMF over to /usr/share (see the blog; it's complex)
+    - need edk2.git-ovmf-x64-###.noarch.rpm from https://www.kraxel.org/repos/jenkins/edk2/
+    - sudo pacman -S rpmextract
+    - rpmextract.sh <edk>
+    - sudo cp -R usr/share/* /usr/share
+    - create /usr/bin/vfio-bind (to replace pci-stub)
+    - run on the pci bus
+    - lspci -nnk should show: kernel driver in use: vfio-pci
+    - now run again on actual card addresses
+    - should get black terminal with yellow text on actual card (but...)
+        --> looks like this won't work with Optimus... maybe.  Need dedicated output

@@ -1,0 +1,23 @@
+SYSTEM
+Error messages from psmouse?
+Error messages from bluetooth?
+intel ucode?
+Keyfile for root partition
+Keyfile and automount for boot partition
+
+UI
+Bigger fonts for terminal use
+Bigger fonts in i3
+i3 bar working
+
+DOCS
+Capture setup steps for LVM/Grub/dm-crypt
+Capture (or script) the package setup
+Document and cache how to get cower
+
+OTHER
+Possible to get some of this on install drive?
+
+Capture:
+bbswitch setup
+enabling of bumblebeed

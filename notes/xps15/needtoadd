@@ -1,0 +1,4 @@
+/etc/default/grub
+/etc/mkinitcpio.conf
+/etc/pacman.d/hooks/nvidia.hook
+/etc/pacman.conf

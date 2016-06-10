@@ -1,0 +1,575 @@
+    5  sudo pacman -S htop
+    6  htop
+    7  acip
+    8  acpi
+    9  acpi -l
+   10  acpi -i 
+   11  acpi -Vi
+   12   vi /etc/pacman.conf 
+   13  clear
+   14  sudo pacman -Syyu
+   15  vi /var/log/pacman.log 
+   16  pacman -k
+   17  pacman -Syyuk
+   18  pacman -S linux
+   19  sudo pacman -S linux
+   20  vi /var/log/pacman.log 
+   21  exit
+   22  ls
+   23  ascii
+   24  cd git/walls/
+   25  ls
+   26  sudo su
+   27  clear
+   28  pacman -Ss bbswitch
+   29  sudo pacman -S bbswitch
+   30  sudo pacman -Syu
+   31  lsblk
+   32  cryptsetup open
+   33  cryptsetup open --type luks
+   34  cryptsetup open --type luks /dev/nvme0n1p2 
+   35  cryptsetup open --type luks /dev/nvme0n1p2 bootcrypt
+   36  sudo cryptsetup open --type luks /dev/nvme0n1p2 bootcrypt
+   37  lsblk
+   38  cd /dev/
+   39  ls
+   40  cd vg
+   41  ls
+   42  cd ..
+   43  cd mapper/
+   44  s
+   45  ls
+   46  sudo mount /dev/mapper/bootcrypt /boot/
+   47  cd /boot/
+   48  ls
+   49  cd ..
+   50  pacman -Syu
+   51  sudo pacman -Syu
+   52  man pacman
+   53  man pacman
+   54  exit
+   55  clear; ascii
+   56  ls
+   57  vi .Xresources 
+   58  xrdb .Xresources 
+   59  vi .Xresources 
+   60  xrdb .Xresources 
+   61  exit
+   62  ls
+   63  vi notes 
+   64  vi dotfiles/notes/todo 
+   65  exit
+   66  ls /boot/grub/grub.cfg
+   67  vi /boot/grub/grub.cfg
+   68  vi /etc/default/grub 
+   69  touch dotfiles/notes/needtoadd
+   70  echo "/etc/default/grub" >> dotfiles/notes/needtoadd 
+   71  cd /etc/
+   72  ls
+   73  cd initcpio/
+   74  ls
+   75  cd hooks/
+   76  ls
+   77  cd ../install/
+   78  ls
+   79  cd ../..
+   80  ls
+   81  vi /etc/mkinitcpio.conf 
+   82  echo "/etc/mkinitcpio.conf" >> ~/dotfiles/notes/needtoadd 
+   83  cd pacman.d/
+   84  ls
+   85  mkdir hooks
+   86  sudo mkdir hooks
+   87  cd hooks/
+   88  ls
+   89  sudo vim nvidia.hook
+   90  status
+   91  vi /etc/pacman.d/hooks/nvidia.hook 
+   92  echo "/etc/pacman.d/hooks/nvidia.hook" >> /home/bdgackle/dotfiles/notes/needtoadd 
+   93  cd
+   94  cd dotfiles/
+   95  status
+   96  uberlog
+   97  git checkout -b dell
+   98  status
+   99  git add notes/needtoadd 
+  100  git commit -m "Create list of files to add to git"
+  101  status
+  102  git commit -m "Create list of files to add to git"
+  103  git config --global user.email "bdgackle@gmail.com"
+  104  git config --global user.name "Barry Gackle"
+  105  git commit -m "Create list of files to add to git"
+  106  status
+  107  vi notes/todo 
+  108  clear
+  109  pacman -Ss bbswitch
+  110  sudo pacman -S bbswitch
+  111  systemctl status bumblebeed
+  112  ls
+  113  cd notes/
+  114  s
+  115  ls
+  116  vi todo
+  117  sudo systemctl enable bumblebeed
+  118  cat /sys/class/power_supply/BAT0/current_now
+  119  man bbswitch
+  120  bbswitch
+  121  pacman -Ql bbswitch
+  122  lsmod
+  123  lsmod |grep bb
+  124  exit
+  125  startx
+  126  startx
+  127  startx
+  128  startx
+  129  startx
+  130  startd
+  131  startx
+  132  vi .xinitrc 
+  133  startx
+  134  startx
+  135  startx
+  136  startx
+  137  startx
+  138  sudo reboot
+  139  cat /sys/class/power_supply/BAT0/current_now 
+  140  cat /sys/class/power_supply/BAT0/current_now 
+  141  cat /sys/class/power_supply/BAT0/current_now 
+  142  cat /sys/class/power_supply/BAT0/current_now 
+  143  cat /sys/class/power_supply/BAT0/current_now 
+  144  cat /sys/class/power_supply/BAT0/current_now 
+  145  cat /sys/class/power_supply/BAT0/current_now 
+  146  cat /sys/class/power_supply/BAT0/current_now 
+  147  systemctl status bumblebeed
+  148  ls
+  149  sudo netctl start wlp2s0-wobbles
+  150  cat /sys/class/power_supply/BAT0/current_now 
+  151  optirun unigine-heaven 
+  152  cat /sys/class/power_supply/BAT0/current_now 
+  153  cat /sys/class/power_supply/BAT0/current_now 
+  154  cat /sys/class/power_supply/BAT0/current_now 
+  155  cat /sys/class/power_supply/BAT0/current_now 
+  156  clear;cat /sys/class/power_supply/BAT0/current_now 
+  157  clear;cat /sys/class/power_supply/BAT0/current_now 
+  158  clear;cat /sys/class/power_supply/BAT0/current_now 
+  159  clear;cat /sys/class/power_supply/BAT0/current_now 
+  160  clear;cat /sys/class/power_supply/BAT0/current_now 
+  161  clear;cat /sys/class/power_supply/BAT0/current_now 
+  162  clear;cat /sys/class/power_supply/BAT0/current_now 
+  163  clear;cat /sys/class/power_supply/BAT0/current_now 
+  164  clear;cat /sys/class/power_supply/BAT0/current_now 
+  165  clear;cat /sys/class/power_supply/BAT0/current_now 
+  166  clear;cat /sys/class/power_supply/BAT0/current_now 
+  167  clear;cat /sys/class/power_supply/BAT0/current_now 
+  168  clear;cat /sys/class/power_supply/BAT0/current_now 
+  169  clear;cat /sys/class/power_supply/BAT0/current_now 
+  170  clear;cat /sys/class/power_supply/BAT0/current_now 
+  171  clear;cat /sys/class/power_supply/BAT0/current_now 
+  172  clear;cat /sys/class/power_supply/BAT0/current_now 
+  173  clear;cat /sys/class/power_supply/BAT0/current_now 
+  174  clear;cat /sys/class/power_supply/BAT0/current_now 
+  175  clear;cat /sys/class/power_supply/BAT0/current_now 
+  176  clear;cat /sys/class/power_supply/BAT0/current_now 
+  177  clear;cat /sys/class/power_supply/BAT0/current_now 
+  178  clear;cat /sys/class/power_supply/BAT0/current_now 
+  179  clear;cat /sys/class/power_supply/BAT0/current_now 
+  180  clear;cat /sys/class/power_supply/BAT0/current_now 
+  181  clear;cat /sys/class/power_supply/BAT0/current_now 
+  182  clear;cat /sys/class/power_supply/BAT0/current_now 
+  183  clear;cat /sys/class/power_supply/BAT0/current_now 
+  184  clear;cat /sys/class/power_supply/BAT0/current_now 
+  185  clear;cat /sys/class/power_supply/BAT0/current_now 
+  186  clear;cat /sys/class/power_supply/BAT0/current_now 
+  187  clear;cat /sys/class/power_supply/BAT0/current_now 
+  188  clear;cat /sys/class/power_supply/BAT0/current_now 
+  189  clear;cat /sys/class/power_supply/BAT0/current_now 
+  190  clear;cat /sys/class/power_supply/BAT0/current_now 
+  191  clear;cat /sys/class/power_supply/BAT0/current_now 
+  192  clear;cat /sys/class/power_supply/BAT0/current_now 
+  193  clear;cat /sys/class/power_supply/BAT0/current_now 
+  194  clear;cat /sys/class/power_supply/BAT0/current_now 
+  195  clear;cat /sys/class/power_supply/BAT0/current_now 
+  196  clear;cat /sys/class/power_supply/BAT0/current_now 
+  197  clear;cat /sys/class/power_supply/BAT0/current_now 
+  198  clear;cat /sys/class/power_supply/BAT0/current_now 
+  199  clear;cat /sys/class/power_supply/BAT0/current_now 
+  200  clear;cat /sys/class/power_supply/BAT0/current_now 
+  201  clear;cat /sys/class/power_supply/BAT0/current_now 
+  202  clear;cat /sys/class/power_supply/BAT0/current_now 
+  203  clear;cat /sys/class/power_supply/BAT0/current_now 
+  204  clear;cat /sys/class/power_supply/BAT0/current_now 
+  205  clear;cat /sys/class/power_supply/BAT0/current_now 
+  206  clear;cat /sys/class/power_supply/BAT0/current_now 
+  207  clear;cat /sys/class/power_supply/BAT0/current_now 
+  208  clear;cat /sys/class/power_supply/BAT0/current_now 
+  209  clear;cat /sys/class/power_supply/BAT0/current_now 
+  210  clear;cat /sys/class/power_supply/BAT0/current_now 
+  211  clear;cat /sys/class/power_supply/BAT0/current_now 
+  212  clear;cat /sys/class/power_supply/BAT0/current_now 
+  213  clear;cat /sys/class/power_supply/BAT0/current_now 
+  214  clear;cat /sys/class/power_supply/BAT0/current_now 
+  215  clear;cat /sys/class/power_supply/BAT0/current_now 
+  216  clear;cat /sys/class/power_supply/BAT0/current_now 
+  217  clear;cat /sys/class/power_supply/BAT0/current_now 
+  218  clear;cat /sys/class/power_supply/BAT0/current_now 
+  219  clear;cat /sys/class/power_supply/BAT0/current_now 
+  220  clear;cat /sys/class/power_supply/BAT0/current_now 
+  221  clear;cat /sys/class/power_supply/BAT0/current_now 
+  222  clear;cat /sys/class/power_supply/BAT0/current_now 
+  223  clear;cat /sys/class/power_supply/BAT0/current_now 
+  224  clear;cat /sys/class/power_supply/BAT0/current_now 
+  225  clear;cat /sys/class/power_supply/BAT0/current_now 
+  226  clear;cat /sys/class/power_supply/BAT0/current_now 
+  227  clear;cat /sys/class/power_supply/BAT0/current_now 
+  228  clear;cat /sys/class/power_supply/BAT0/current_now 
+  229  clear;cat /sys/class/power_supply/BAT0/current_now 
+  230  clear;cat /sys/class/power_supply/BAT0/current_now 
+  231  clear;cat /sys/class/power_supply/BAT0/current_now 
+  232  clear;cat /sys/class/power_supply/BAT0/current_now 
+  233  clear;cat /sys/class/power_supply/BAT0/current_now 
+  234  clear;cat /sys/class/power_supply/BAT0/current_now 
+  235  clear;cat /sys/class/power_supply/BAT0/current_now 
+  236  clear;cat /sys/class/power_supply/BAT0/current_now 
+  237  clear;cat /sys/class/power_supply/BAT0/current_now 
+  238  clear;cat /sys/class/power_supply/BAT0/current_now 
+  239  clear;cat /sys/class/power_supply/BAT0/current_now 
+  240  clear;cat /sys/class/power_supply/BAT0/current_now 
+  241  clear;cat /sys/class/power_supply/BAT0/current_now 
+  242  clear;cat /sys/class/power_supply/BAT0/current_now 
+  243  clear;cat /sys/class/power_supply/BAT0/current_now 
+  244  clear;cat /sys/class/power_supply/BAT0/current_now 
+  245  clear;cat /sys/class/power_supply/BAT0/current_now 
+  246  clear;cat /sys/class/power_supply/BAT0/current_now 
+  247  clear;cat /sys/class/power_supply/BAT0/current_now 
+  248  clear;cat /sys/class/power_supply/BAT0/current_now 
+  249  clear;cat /sys/class/power_supply/BAT0/current_now 
+  250  clear;cat /sys/class/power_supply/BAT0/current_now 
+  251  clear;cat /sys/class/power_supply/BAT0/current_now 
+  252  clear;cat /sys/class/power_supply/BAT0/current_now 
+  253  clear;cat /sys/class/power_supply/BAT0/current_now 
+  254  clear;cat /sys/class/power_supply/BAT0/current_now 
+  255  clear;cat /sys/class/power_supply/BAT0/current_now 
+  256  clear;cat /sys/class/power_supply/BAT0/current_now 
+  257  clear;cat /sys/class/power_supply/BAT0/current_now 
+  258  clear;cat /sys/class/power_supply/BAT0/current_now 
+  259  clear;cat /sys/class/power_supply/BAT0/current_now 
+  260  acpi -Vi
+  261  cat /proc/acpi/bbswitch 
+  262  cat /proc/acpi/bbswitch 
+  263  sudo su
+  264  cat /proc/acpi/bbswitch 
+  265  clear;cat /sys/class/power_supply/BAT0/current_now 
+  266  clear;cat /sys/class/power_supply/BAT0/current_now 
+  267  clear;cat /sys/class/power_supply/BAT0/current_now 
+  268  clear;cat /sys/class/power_supply/BAT0/current_now 
+  269  clear;cat /sys/class/power_supply/BAT0/current_now 
+  270  clear;cat /sys/class/power_supply/BAT0/current_now 
+  271  sudo shutdown 0
+  272  startx
+  273  clear;cat /sys/class/power_supply/BAT0/current_now 
+  274  clear;cat /sys/class/power_supply/BAT0/current_now 
+  275  clear;cat /sys/class/power_supply/BAT0/current_now 
+  276  clear;cat /sys/class/power_supply/BAT0/current_now 
+  277  clear;cat /sys/class/power_supply/BAT0/current_now 
+  278  clear;cat /sys/class/power_supply/BAT0/current_now 
+  279  clear;cat /sys/class/power_supply/BAT0/current_now 
+  280  clear;cat /sys/class/power_supply/BAT0/current_now 
+  281  clear;cat /sys/class/power_supply/BAT0/current_now 
+  282  clear;cat /sys/class/power_supply/BAT0/current_now 
+  283  clear;cat /sys/class/power_supply/BAT0/current_now 
+  284  clear;cat /sys/class/power_supply/BAT0/current_now 
+  285  clear;cat /sys/class/power_supply/BAT0/current_now 
+  286  clear;cat /sys/class/power_supply/BAT0/current_now 
+  287  clear;cat /sys/class/power_supply/BAT0/current_now 
+  288  clear;cat /sys/class/power_supply/BAT0/current_now 
+  289  clear;cat /sys/class/power_supply/BAT0/current_now 
+  290  clear;cat /sys/class/power_supply/BAT0/current_now 
+  291  clear;cat /sys/class/power_supply/BAT0/current_now 
+  292  clear;cat /sys/class/power_supply/BAT0/current_now 
+  293  clear;cat /sys/class/power_supply/BAT0/current_now 
+  294  clear;cat /sys/class/power_supply/BAT0/current_now 
+  295  clear;cat /sys/class/power_supply/BAT0/current_now 
+  296  clear;cat /sys/class/power_supply/BAT0/current_now 
+  297  clear;cat /sys/class/power_supply/BAT0/current_now 
+  298  clear;cat /sys/class/power_supply/BAT0/current_now 
+  299  clear;cat /sys/class/power_supply/BAT0/current_now 
+  300  clear;cat /sys/class/power_supply/BAT0/current_now 
+  301  clear;cat /sys/class/power_supply/BAT0/current_now 
+  302  clear;cat /sys/class/power_supply/BAT0/current_now 
+  303  clear;cat /sys/class/power_supply/BAT0/current_now 
+  304  clear;cat /sys/class/power_supply/BAT0/current_now 
+  305  clear;cat /sys/class/power_supply/BAT0/current_now 
+  306  clear;cat /sys/class/power_supply/BAT0/current_now 
+  307  sudo netctl start wlp2s0-wobbles
+  308  exit
+  309  cat /proc/acpi/bbswitch 
+  310  cat /sys/class/power_supply/BAT0/current_now 
+  311  cat /proc/cpuinfo 
+  312  clear;cat /sys/class/power_supply/BAT0/current_now 
+  313  startx
+  314  clear;cat /sys/class/power_supply/BAT0/current_now 
+  315  clear;cat /sys/class/power_supply/BAT0/current_now 
+  316  clear;cat /sys/class/power_supply/BAT0/current_now 
+  317  cat /proc/acpi/bbswitch 
+  318  clear;cat /sys/class/power_supply/BAT0/current_now 
+  319  clear;cat /sys/class/power_supply/BAT0/current_now 
+  320  optirun unigine-heaven 
+  321  cat /proc/acpi/bbswitch 
+  322  sudo shutdown 0
+  323  cd 
+  324  cd dotfiles/
+  325  ls
+  326  status
+  327  git diff feh/.fehbg 
+  328  git add feh/.fehbg 
+  329  git commit -m "Add wallpaper"
+  330  git diff i3/.i3/config 
+  331  git add -p i3/.i3/config 
+  332  sudo su
+  333  status
+  334  git reset
+  335  git add -p i3/.i3/config 
+  336  git commit -m "Set i3bar font"
+  337  status
+  338  git add -p i3/.i3/config 
+  339  git show
+  340  git commit --amend
+  341  status
+  342  git diff i3/.i3/config 
+  343  git add i3/.i3/config -p
+  344  git commit -m "Set dmenu font, size, and position"
+  345  status
+  346  git add -p i3/.i3/config 
+  347  git commit -m "Add i3 binding for focusing on child"
+  348  status
+  349  git diff xorg/.Xresources 
+  350  cd
+  351  vi .Xresources 
+  352  status
+  353  cd dotfiles/
+  354  git diff xorg/.Xresources 
+  355  git add xorg/.Xresources 
+  356  git commit -m "Adjusted URXVT fonts"
+  357  status
+  358  git diff xorg/.xinitrc 
+  359  cd /usr/share/fonts/
+  360  ls
+  361  cd ..
+  362  cd ..
+  363  cd
+  364  vi .xinitrc 
+  365  status
+  366  cd dotfiles/
+  367  status
+  368  git diff xorg/.xinitrc 
+  369  killall i3
+  370  killall i3
+  371  ls
+  372  cd
+  373  exit
+  374  killall i3
+  375  ls
+  376  cat /sys/class/power_supply/BAT0/voltage_now 
+  377  cd /sys/class/power_supply/BAT0
+  378  ls
+  379  cat power/runtime_enabled 
+  380  cat power/runtime_status 
+  381  ls
+  382  cat t
+  383  cat technology 
+  384  cat voltage_min_design 
+  385  cat capacity
+  386  cat charge_full
+  387  cat cycle_count 
+  388  cat current_now 
+  389  cat /proc/acpi/bbswitch 
+  390  cat /proc/cpuinfo 
+  391  cat current_now 
+  392  ls
+  393  cat capacity_level 
+  394  cat capacity
+  395  cat alarm 
+  396  cat manufacturer 
+  397  cat model_name 
+  398  cat present 
+  399  cat serial_number 
+  400  cat status 
+  401  cat type 
+  402  cat uevent 
+  403  ls
+  404  cd ..
+  405  ls
+  406  cd AC
+  407  ls
+  408  cat online 
+  409  cat type 
+  410  cat uevent 
+  411  cat device
+  412  ls
+  413  cd ..
+  414  ls
+  415  cd BAT0
+  416  ls
+  417  cat voltage_now 
+  418  cat voltage_min_design 
+  419  cd ..
+  420  ls
+  421  cd ..
+  422  ls
+  423  ls -1
+  424  ls -1 |less
+  425  showkeys
+  426  showkey
+  427  ls
+  428  cat /usr/share/
+  429  ls
+  430  cd /usr/share/
+  431  ls
+  432  cd keyutils/
+  433  ls
+  434  cd ..
+  435  ls
+  436  cd keyutils/
+  437  cat request-key-debug.sh 
+  438  ls
+  439  cd ..
+  440  ls
+  441  cd vulkan/
+  442  ls
+  443  cd icd.d/
+  444  ls
+  445  vi nvidia_icd.json 
+  446  ls
+  447  cd ..
+  448  cd ..
+  449  ls
+  450  cd kbd/
+  451  ls
+  452  ls -1 |less
+  453  cd keymaps/
+  454  ls
+  455  ls -1 |less
+  456  cd i386/
+  457  ls
+  458  ls -1 |less
+  459  v
+  460  cd qwerty/
+  461  ls
+  462  ls -l
+  463  vi us.map.gz 
+  464  reset
+  465  startx
+  466  startx
+  467  startx
+  468  cd
+  469  startx
+  470  cd dotfiles/
+  471  status
+  472  git diff xorg/.xinitrc 
+  473  git add xorg/.xinitrc -m "Adjust x fonts directory to latest Arch config"
+  474  status
+  475  git add xorg/.xinitrc 
+  476  git commit -m "Adjust X fonts directory to lastest X config"
+  477  status
+  478  cd notes/
+  479  ls
+  480  cd todo 
+  481  ls
+  482  git diff todo 
+  483  status
+  484  ls
+  485  cd todo 
+  486  ls
+  487  vi todo 
+  488  status
+  489  ls
+  490  cat needtoadd 
+  491  cd ..
+  492  ls
+  493  man stow
+  494  info stow
+  495  cat /sys/class/power_supply/BAT0/current_now 
+  496  cat /sys/class/power_supply/BAT0/current_now 
+  497  cat /sys/class/power_supply/BAT0/current_now 
+  498  cat /sys/class/power_supply/BAT0/current_now 
+  499  cat /proc/acpi/bbswitch 
+  500  sudo reboot 
+  501  lsblkk
+  502  lsblk
+  503  head /var/log/pacman.log 
+  504  history > all 
+base bash
+base bzip2
+base coreutils
+base cryptsetup
+base device-mapper
+base dhcpcd
+base diffutils
+base e2fsprogs
+base file
+base filesystem
+base findutils
+base gawk
+base gcc-libs
+base gettext
+base glibc
+base grep
+base gzip
+base inetutils
+base iproute2
+base iputils
+base jfsutils
+base less
+base licenses
+base linux
+base logrotate
+base lvm2
+base man-db
+base man-pages
+base mdadm
+base nano
+base netctl
+base pacman
+base pciutils
+base pcmciautils
+base perl
+base procps-ng
+base psmisc
+base reiserfsprogs
+base s-nail
+base sed
+base shadow
+base sysfsutils
+base systemd-sysvcompat
+base tar
+base texinfo
+base usbutils
+base util-linux
+base vi
+base which
+base xfsprogs
+base-devel autoconf
+base-devel automake
+base-devel binutils
+base-devel bison
+base-devel fakeroot
+base-devel file
+base-devel findutils
+base-devel flex
+base-devel gawk
+base-devel gcc
+base-devel gettext
+base-devel grep
+base-devel groff
+base-devel gzip
+base-devel libtool
+base-devel m4
+base-devel make
+base-devel pacman
+base-devel patch
+base-devel pkg-config
+base-devel sed
+base-devel sudo
+base-devel texinfo
+base-devel util-linux
+base-devel which
