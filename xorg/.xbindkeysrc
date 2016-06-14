@@ -1,0 +1,7 @@
+# Increase brightness
+"xbacklight -inc 5"
+    XF86MonBrightnessUp
+
+# Decrease brightness
+"xbacklight -dec 5"
+    XF86MonBrightnessDown
