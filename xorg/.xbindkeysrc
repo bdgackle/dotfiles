@@ -5,3 +5,7 @@
 # Decrease brightness
 "xbacklight -dec 5"
     XF86MonBrightnessDown
+
+# Toggle touchpad
+"~/scripts/touchpad-toggle"
+    Menu
