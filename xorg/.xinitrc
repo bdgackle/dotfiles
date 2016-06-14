@@ -4,5 +4,6 @@ xset fp rehash
 xset -b
 compton &
 sh ~/.fehbg &
+xbindkeys
 
 exec i3
