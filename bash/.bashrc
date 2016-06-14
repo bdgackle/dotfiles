@@ -11,6 +11,8 @@ PS1='[\u@\h \W]\$ '
 #pretty solarized ls
 eval `dircolors ~/.dircolors.ansi-dark`
 
+PATH=$PATH:~/scripts
+
 # Set bash to vi mode
 set -o vi
 
