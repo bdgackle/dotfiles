@@ -50,6 +50,8 @@ alias clean="rm -f *.gch; rm -f *.o; rm -f a.out"
 # Pacman one-line for listing installed, but not base/base-devel
 alias listpac="comm -23 <(pacman -Qeq | sort) <(pacman -Qgq base base-devel | sort)"
 
+source .shortcuts
+
 # Fix Java because Xilinx is dumb
 _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_AWT_WM_NON_REPARENTING
