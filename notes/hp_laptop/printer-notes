@@ -1,0 +1,49 @@
+
+1) Installed cups and hp driver packages:
+    sudo pacman -S cpus
+    sudo pacman -S hplip
+    sudo pacman -S python2-dbus
+    sudo pacman -S ghostscript
+    sudo pacman -S gs-fonts
+
+2) Ran setup for hp drivers, manually selected ppd file:
+    hp-setup -i
+
+3) Start and enable cups service
+    sudo systemctl start org.cups.cupsd
+    sudo systemctl enable org.cups.cupsd
+
+4) Locate printer device name with lpinfo:
+    sudo lpinfo -v
+
+5) Add the printer to cups (NOTE, '-p HP' specifies user defined printer name)
+    sudo lpadmin -p HP -E -v hp:/usb/Deskjet_F4100_series?serial=CN78R4S34104TJ  -P /usr/share/ppd/HP/hp-deskjet_f4100_series.ppd.gz
+
+6) Set printer as default (using user defined printer name)
+    sudo lpoptions -d HP
+
+7) Enable printer in cups
+    sudo cupsenable HP
+
+8) Print a test page
+    sudo hp-testpage
+
+9) Install cloudprint-server from the AUR
+    cower -d cloudprint-server
+    cd cloudprint-server
+    makepkg
+    sudo pacman -U cloudprint-server-3-1-any.pkg.tar.xz
+
+10) Configure cloudprint-server for specific Google account: hecoxprinter@gmail.com; pw = pleaseme
+    sudo /usr/lib/cloudprint-server/generate_loudprint_config.sh
+
+*********************** BELOW ONLY FOR SAMBA SERVER (NOT ENABLED RIGHT NOW) *************************************8
+
+11) Installed samba server
+    sudo pacman -S samba
+
+12) Enable and start samba server
+    sudo systemctl start nmbd
+    sudo systemctl enable nmbd
+    sudo systemctl start smbd
+    sudo systemctl enable smbd
