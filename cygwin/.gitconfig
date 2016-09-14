@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Barry Gackle
+	email = barry.gackle@synapse.com
+[push]
+	default = matching

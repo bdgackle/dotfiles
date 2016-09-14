@@ -1,0 +1,12 @@
+BoldAsFont=no
+Font=Lucida Console
+FontHeight=10
+FontSmoothing=default
+Transparency=low
+Scrollbar=none
+Columns=147
+Rows=57
+Term=xterm
+Locale=
+Charset=
+CursorType=block
