@@ -1,0 +1,3 @@
+#!/bin/sh
+
+qemu-system-x86_64 -enable-kvm -cpu host -m 8G -machine type=pc,accel=kvm ~/vm/win_10_test
