@@ -19,7 +19,7 @@ alias vi="vim"
 alias c="clear;"
 
 # Frequently used directories
-source .shortcuts
+#source .shortcuts
 alias snapshot="cd /cygdrive/c/Users/barryga/Desktop/input/controller_framework"
 alias d0g="cd /cygdrive/c/Users/barryga/Desktop/input/controller_framework/firmware/src/projects/d0g"
 alias platform="cd /cygdrive/c/Users/barryga/Desktop/input/controller_framework/firmware/src/platform/lpc11Uxx"
@@ -44,4 +44,4 @@ alias watchll="watch -c -n 1 ls --color -l"
 alias watchlla="watch -c -n 1 ls --color -la"
 
 # Set Cygwin color scheme on login
-#source ~/sol.dark
+source ~/.sol.dark
