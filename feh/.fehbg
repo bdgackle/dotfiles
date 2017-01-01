@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-xinerama --image-bg black --bg-center '/home/bdgackle/media/wallpaper/highlandspring1uhd.jpg' 
+feh  --image-bg black --bg-center '/home/bdgackle/media/wallpaper/highlandspring1uhd.jpg' 
