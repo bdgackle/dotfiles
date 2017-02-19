@@ -1,0 +1,7 @@
+Strange looking AUR packages -- and why I might still need them
+
+dmenu-xfg-wxy-mouse: Current dmenu version I'm using
+lib32-ncurses5-compat-libs: Needed by ARM GCC for Medusa/Snowcap
+jlink-software-and-documentation: Needed by Medusa/Snowcap scripts
+terminess-powerline-font-git: Needed to ssh to barrybox without errors
+python2-intelhex: Needed to build Medusa
