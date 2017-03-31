@@ -1,6 +1,6 @@
 BoldAsFont=no
-Font=Lucida Console
-FontHeight=10
+Font=Terminus
+FontHeight=12
 FontSmoothing=default
 Transparency=low
 Scrollbar=none
