@@ -1,7 +1,7 @@
 BoldAsFont=no
 Font=Terminus
-FontHeight=12
-FontSmoothing=default
+FontHeight=14
+FontSmoothing=no
 Transparency=low
 Scrollbar=none
 Columns=147
