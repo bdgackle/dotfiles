@@ -2,3 +2,5 @@
 /etc/mkinitcpio.conf
 /etc/pacman.d/hooks/nvidia.hook
 /etc/pacman.conf
+
+Notation about adding the intel section to xorg.conf.d in order to get the stupid xbacklight thing to recognize that we have a backlight.  Change made after my last upgrade.
